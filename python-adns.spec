@@ -37,5 +37,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
+%attr(755,root,root) %{py_sitedir}/*.so
 %{py_sitedir}/*.py?
-%{py_sitedir}/*.so
