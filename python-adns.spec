@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.python
 Summary:	Python bindings to GNU adns
 Summary(pl):	Wi±zania Pythona do biblioteki GNU adns
 Name:		python-adns
