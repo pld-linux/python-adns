@@ -7,6 +7,7 @@ Release:	1
 License:	GPL v2+
 Group:		Libraries/Python
 Source0:	http://dustman.net/andy/python/adns-python/%{version}/adns-python-%{version}.tar.gz
+# Source0-md5:	8a613ac4d294bdd45601f9177d957090
 URL:		http://dustman.net/andy/python/adns-python/
 %pyrequires_eq	python
 BuildRequires:	adns-devel >= 1.0
