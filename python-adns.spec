@@ -11,7 +11,6 @@ URL:		http://dustman.net/andy/python/adns-python/
 %pyrequires_eq	python
 BuildRequires:	adns-devel >= 1.0
 BuildRequires:	python-devel >= 2.2.1
-BuildRequires:	rpm-pythonprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
