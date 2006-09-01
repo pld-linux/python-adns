@@ -1,0 +1,21 @@
+diff -urN adns-python-1.0.0.org/adnsmodule.c adns-python-1.0.0/adnsmodule.c
+--- adns-python-1.0.0.org/adnsmodule.c	2000-12-06 22:02:29.000000000 +0000
++++ adns-python-1.0.0/adnsmodule.c	2006-09-01 08:02:53.497682500 +0000
+@@ -106,7 +106,7 @@
+ };
+ 
+ static _constant_class adns_rr[] = {
+-	{ "typemask", adns__rrt_typemask },
++	{ "typemask", adns_rrt_typemask },
+ 	{ "deref", adns__qtf_deref },
+ 	{ "mail822", adns__qtf_mail822 },
+ 	{ "none", adns_r_none },
+@@ -199,7 +199,7 @@
+ {
+ 	PyObject *o, *rrs;
+ 	int i;
+-	adns_rrtype t = answer->type & adns__rrt_typemask;
++	adns_rrtype t = answer->type & adns_rrt_typemask;
+ 	adns_rrtype td = answer->type & adns__qtf_deref;
+ 
+ 	rrs = PyTuple_New(answer->nrrs);
