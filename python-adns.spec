@@ -2,11 +2,12 @@ Summary:	Python bindings to GNU adns
 Summary(pl):	Wi±zania Pythona do biblioteki GNU adns
 Name:		python-adns
 Version:	1.0.0
-Release:	4
+Release:	5
 License:	GPL v2+
 Group:		Libraries/Python
 Source0:	http://dustman.net/andy/python/adns-python/%{version}/adns-python-%{version}.tar.gz
 # Source0-md5:	8a613ac4d294bdd45601f9177d957090
+Patch0:		%{name}-build.patch
 URL:		http://dustman.net/andy/python/adns-python/
 %pyrequires_eq	python
 BuildRequires:	adns-devel >= 1.0
@@ -21,7 +22,9 @@ Interfejs do biblioteki GNU adns.
 
 %prep
 %setup -q -n adns-python-%{version}
+%patch0 -p1
 
+%build
 python setup.py build
 
 %install
