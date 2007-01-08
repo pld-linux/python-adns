@@ -1,0 +1,12 @@
+diff -urN adns-python-1.2.0.org/adnsmodule.c adns-python-1.2.0/adnsmodule.c
+--- adns-python-1.2.0.org/adnsmodule.c	2006-12-31 18:25:29.000000000 +0100
++++ adns-python-1.2.0/adnsmodule.c	2007-01-08 13:18:16.623624500 +0100
+@@ -719,7 +719,7 @@
+ 	adns_finish(self->state);
+ 	Py_END_ALLOW_THREADS;
+ 	Py_INCREF(Py_None);
+-	PyMem_DEL(self);
++	PyObject_Free(self);
+ }
+ 
+ static char ADNS_Statetype__doc__[] = 
