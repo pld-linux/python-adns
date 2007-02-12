@@ -1,5 +1,5 @@
 Summary:	Python bindings to GNU adns
-Summary(pl):	Wi±zania Pythona do biblioteki GNU adns
+Summary(pl.UTF-8):   WiÄ…zania Pythona do biblioteki GNU adns
 Name:		python-adns
 Version:	1.2.0
 Release:	2
@@ -17,7 +17,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Interface to GNU adns library.
 
-%description -l pl
+%description -l pl.UTF-8
 Interfejs do biblioteki GNU adns.
 
 %prep
