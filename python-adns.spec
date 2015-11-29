@@ -8,6 +8,7 @@ Group:		Libraries/Python
 Source0:	http://adns-python.googlecode.com/files/adns-python-%{version}.tar.gz
 # Source0-md5:	12cc7ad1b0ee8d818005e9ca4def758b
 URL:		http://code.google.com/p/adns-python/
+BuildRequires:	rpmbuild(macros) >= 1.710
 %pyrequires_eq	python
 BuildRequires:	adns-devel >= 1.4
 BuildRequires:	python-devel >= 2.2.1
